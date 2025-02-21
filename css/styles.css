@@ -9,6 +9,7 @@
 body {
     background-color: #ECECEC;
     font: normal normal normal 16px/16px 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -21,7 +22,14 @@ ul li {
 
 /* HEADER */
 #header {
-    background-color: #05161A; 
+    background: linear-gradient(45deg, 
+        #05161A 17%, 
+        #072E33 28%, 
+        #294D61 43%, 
+        #0C7073 55%, 
+        #0F969C 66%, 
+        #6DA5C0 78%
+    );
     color: #fff;
     min-height: 750px;
     border-radius: 0 0 100px 100px;
@@ -37,12 +45,14 @@ ul li {
 }
 
 .logo {
+    height: auto;
     font-size: 64px;
     font-weight: 800;
+    text-shadow: 10px 10px 16px #333333;
 }
 
 .nav {
-
+    text-shadow: 10px 10px 16px #333333;
 }
 
 .nav_list {
@@ -54,6 +64,7 @@ ul li {
 .nav_item { 
     font-size: 32px;
     font-weight: 600;
+    color: #fff;
 }
 
 
@@ -61,12 +72,15 @@ ul li {
     margin: 75px 0 0 164px;
     display: flex;
     gap: 101px;
+
 }
 
 .about_img {
     width: 414px;
     height: 526px;
     border-radius: 25px;
+    box-shadow: 10px 10px 16px #333333;
+
 }
 
 .header_about-text {
@@ -81,11 +95,13 @@ ul li {
 
 .about_text:first-child {
     font-size: 48px;
+    text-shadow: 10px 10px 16px #333333;
 }
 
 .about_text:nth-child(2) {
     font-size: 72px;
     margin-top: 52px;
+    text-shadow: 10px 10px 16px #333333;
 }
 
 .about_text:last-child { 
@@ -95,6 +111,7 @@ ul li {
     margin-top: 48px;
     padding: 24px 0 0 22px;
     background-color: #0F969C;
+    box-shadow: 8px 8px 32px #333333;
 }
 
 /* END OF HEADER */
@@ -103,10 +120,173 @@ ul li {
 #container {
     
 }
+
+#container_about {
+    display: flex;
+    margin: 108px 172px 0;
+}
+
+.container_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_head {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.about_des {
+    text-align: justify;
+    padding: 16px 52px 0 0;
+    font-size: 22px;
+    line-height: 1.65;
+    font-weight: 450;
+}
+
+.container_about_img {
+    width: 414px;
+    height: 526px;
+    border-radius: 25px;
+}
+
+#container_skills {
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_icon {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 51px;
+    gap: 49px;
+    width: 1086px;
+}
+
+.skills_icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    background-color: #6DA5C0;
+    color: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 55px;
+    box-shadow: 4px 4px 20px #888;
+}
+
+#container_projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_section {
+    display: flex;
+    gap: 133px;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 0 0;
+}
+
+.projects_card { 
+
+}
+
+.projects_img { 
+    width: 587px;
+    height: 324px;
+}
+
+.projects_text { 
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 24px 0 12px 0;
+    color: #000;
+}
+
+.projects_text::before {
+    content: "";
+    position: relative;
+    top: 12px;
+    left: 255px;
+    width: 250px;
+    border-bottom: 2px solid #000;
+}
+
+.projects_text p {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.projects_text:hover {
+    color: #0F969C;
+}
+
+.projects_text i {
+    font-size: 18px;
+}
 /* END OF CONTAINER */
 
 /* FOOTER */
 #footer {
-    
+    background-color: #ECECEC;
+    padding: 20px 172px;
+    margin-top: 50px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_info {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.contact_info p {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact_info p:hover {
+    color: #6DA5C0;
+}
+
+.social_links {
+    display: flex;
+    gap: 20px;
+}
+
+.social_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #6DA5C0;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social_link:hover {
+    background-color: #0F969C;
+    transform: translateY(-3px);
+}
+
+.social_link i {
+    font-size: 25px;
 }
 /* END OF FOOTER */

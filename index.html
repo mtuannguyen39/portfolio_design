@@ -13,10 +13,18 @@
             <p class="logo">portfolio</p>
             <nav class="nav">
                 <ul class="nav_list">
-                    <li class="nav_item">home</li>
-                    <li class="nav_item">skills</li>
-                    <li class="nav_item">projects</li>
-                    <li class="nav_item">contacts</li>
+                    <a href="#">
+                        <li class="nav_item">home</li>
+                    </a>
+                    <a href="#container_skills">
+                        <li class="nav_item">skills</li>
+                    </a>
+                    <a href="#container_projects">
+                        <li class="nav_item">projects</li>
+                    </a>
+                    <a href="#footer">
+                        <li class="nav_item">contacts</li>
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -32,11 +40,79 @@
 
     <!-- CONTAINER -->
     <div id="container">
+        <!-- ABOUT ME -->
+        <div id="container_about">
+            <div class="container_text">
+                <h1 class="about_head">about me</h1>
+                <p class="about_des">
+                    My name is NGUYEN MINH TUAN, As a final-year student majoring in Information Technology/Software Engineering. 
+                    I am seeking an internship opportunity at a technology company to apply my knowledge in software development. 
+                    I am eager to learn from a real-world working environment and contribute to software development projects with my passion and creativity.
+                </p>
+            </div>
+            <img src="/img/avatar.jpg" alt="Avatar" class="container_about_img">
+        </div>
 
+        <!-- MY SKILLS -->
+        <div id="container_skills">
+                <h1 class="about_head">my skills</h1>
+                <div class="skills_icon">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+        </div>
+
+        <!-- MY PROJECTS -->
+        <div id="container_projects">
+            <h1 class="about_head">my projects</h1>
+            <div class="projects_section">
+                <div class="projects_card">
+                    <a href="https://github.com/mtuannguyen39/DoAn_BDS">
+                        <img src="/img/bds_pro.png" alt="Bất động sản" class="projects_img">
+                        <div class="projects_text">
+                            <p>here is my code</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="projects_card">
+                    <a href="https://github.com/mtuannguyen39/Layout_NhaTho">
+                        <img src="/img/church_pro.png" alt="Nhà thờ Tân Trang" class="projects_img">
+                        <div class="projects_text">
+                            <p>here is my code</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer id="footer">
-        
+        <div class="footer_content">
+            <div class="contact_info">
+                <p>+84 372 917 673</p>
+                <p>mtuan.nguyen39@gmail.com</p>
+            </div>
+            <div class="social_links">
+                <a href="#" class="social_link">
+                    <i class="fa-solid fa-m"></i>
+                </a>
+                <a href="https://github.com/mtuannguyen39" class="social_link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="social_link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
     </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="https://kit.fontawesome.com/6663c6a7e6.js" crossorigin="anonymous"></script>
 </body>
 </html>
