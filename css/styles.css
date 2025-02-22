@@ -185,13 +185,16 @@ ul li {
 #container_projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects_section {
+    width: 1307px;
     display: flex;
+    flex-wrap: wrap;
     gap: 133px;
-    justify-content: center;
-    align-items: center;
+    
     padding: 56px 0 0;
 }
 
